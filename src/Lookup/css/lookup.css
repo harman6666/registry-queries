@@ -1,0 +1,122 @@
+.container {
+  height: 85vh;
+  min-height: 700px;
+  width: 70%;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, .3);
+}
+
+.header {
+  height: 50px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #005653;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submit__btn {
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 8px;
+  padding-left: 8px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #e6e6e6;
+  transition: width .5s ease-out;
+  position: absolute;
+  right: 33rem;
+}
+
+.search {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.search__input {
+  width: 25%;
+  border-radius: 15px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  padding: 8px;
+  padding-right: 35px;
+  padding-left: 13px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif;
+  color: #e6e6e6;
+  transition: width .5s ease-out;
+  margin-right: -30px;
+}
+
+.search__result>div {
+  margin: 15px 0;
+}
+
+.search__input::placeholder {
+  color: #969090;
+}
+
+.search__input:focus {
+  width: 27%;
+}
+
+.search__icon {
+  height: 22px;
+}
+
+.search__icon:active {
+  transform: translateY(2px);
+}
+
+.search__result--header,
+.search__result {
+  color: #e6e6e6;
+}
+
+.search__result {
+  margin-top: 20px;
+}
+
+.search__result--header {
+  margin-top: 30px;
+}
+
+/* Table styling */
+.tbl__header {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.tbl__content {
+  height: 300px;
+  overflow-x: auto;
+  margin-top: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.no__data {
+  text-align: center;
+  font-size: 1rem;
+}
+
+section {
+  margin: 50px;
+}
+
+/* Loader styling */
+.loader.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(88, 72, 72, 0.4) url(../../images/loader.svg) no-repeat center;
+  z-index: 2;
+}
