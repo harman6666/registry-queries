@@ -41,6 +41,7 @@ class Lookup extends PureComponent {
           this.getTransaction(node, result);
         } else {
           node.classList.remove('active');
+          this.setState({transactionsData: null, balanceData: null});
         }
       }).catch((err) => {
         node.classList.remove('active');
